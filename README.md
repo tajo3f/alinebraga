@@ -25,3 +25,13 @@ O projeto inclui CSP estrita, HSTS, bloqueio de framing, nosniff, políticas de 
 
 ## Publicação
 Recomendado: Vercel. O `vercel.json` já contém os headers de segurança. Cadastre `institutoalinebraga.com.br` como domínio principal e redirecione qualquer domínio alternativo para ele no painel da hospedagem.
+
+
+## Atualização — Equipe e refinamento responsivo
+- Nova página `/equipe/` com os profissionais e funções informados pelo Instituto.
+- Seção de equipe adicionada à Home e ao conteúdo institucional.
+- Biografia de Aline Braga atualizada com trajetória desde 2009 e fundação do Instituto em 19/11/2012.
+- Retratos convertidos para WebP e padronizados em proporção 4:5.
+- Composição editorial `equipe-instituto.webp` criada exclusivamente com retratos reais fornecidos; não é uma fotografia coletiva.
+- Scroll/reveals suavizados e navegação desktop recalibrada para comportar o item Equipe.
+- Responsividade revisada para mobile, tablet e desktop.

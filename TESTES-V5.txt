@@ -1,0 +1,36 @@
+INSTITUTO ALINE BRAGA — TESTES V5
+
+Estrutura
+- 11 páginas HTML analisadas.
+- 1 H1 por página: OK.
+- IDs duplicados: 0.
+- Links internos quebrados: 0.
+- Imagens sem alt: 0.
+- JSON-LD: válido nas páginas analisadas.
+- sitemap.xml: XML válido.
+- vercel.json: JSON válido.
+
+Código
+- JavaScript: `node --check` aprovado.
+- CSS: tinycss2, 240 regras, 0 erros de parsing.
+- Chaves CSS balanceadas: OK.
+- CSP: hashes SHA-256 recalculados após alteração dos JSON-LD.
+
+Rotas em servidor local
+/ 200
+/aline-braga/ 200
+/equipe/ 200
+/tratamentos/ 200
+/tratamentos/estetica-facial/ 200
+/tratamentos/estetica-corporal/ 200
+/tratamentos/estetica-intima/ 200
+/instituto/ 200
+/contato/ 200
+/privacidade/ 200
+
+Responsividade implementada em CSS
+- Desktop: grade de equipe em 3 colunas.
+- Tablet: 2 colunas.
+- Mobile: 1 coluna; teaser usa composição horizontal compacta.
+- Navegação desktop possui breakpoint intermediário antes do menu mobile.
+- `prefers-reduced-motion` respeitado.
