@@ -9,7 +9,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; script-src 'self' 'sha256-2JF7yIZW8wSzYABrzjFzAl8AiDIjrH3bzLeqc+7DCno=' 'sha256-3Vg6Y1i3rl9aZzL7K5UjuC2StexZkExsyRhIAkERhSE=' 'sha256-4Zw9hoCH5NzXZFoBE1bgOiwXVGFLwaE8JZXvbDt1Yu8=' 'sha256-7I/rZIEI+p2iXgtK/zVv80x8kuQzUi2PnpztGLcl0YY=' 'sha256-JiQWaKCa7uvT/NVD3Fv4zD19bldwp9FwDw4m57aVfdo=' 'sha256-LjwY6fHGhiioivHdnjLFMb2M3s+qev6s7/pOSh9NypI=' 'sha256-e3KIKEKxL9er/v0G6RaRrrxeVzTp2VuyAYiTAZmuVTw=' 'sha256-g2XKK5BMER2c6jL9J5mxnW8K68+FNAYGgk+8pqEQQTw=' 'sha256-gBdrwNf7HZXnANWql/2pVoiS4GNj71KYmbBt7ML/5QY=' 'sha256-khHZn7RROcaIiuqSqraXZt9/y5vrWc5TfFwqIFwDZDI='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests"
+          "value": "default-src 'self'; script-src 'self' 'sha256-4Zw9hoCH5NzXZFoBE1bgOiwXVGFLwaE8JZXvbDt1Yu8=' 'sha256-3Vg6Y1i3rl9aZzL7K5UjuC2StexZkExsyRhIAkERhSE=' 'sha256-pHN3LOlAam331MTDYhcSGe4FjID0ChimA5CGMY9w4GQ=' 'sha256-7I/rZIEI+p2iXgtK/zVv80x8kuQzUi2PnpztGLcl0YY=' 'sha256-8lW3VmGhSAoVik/9oTL3kfjvJMhSeLznjG/lf86bwJU=' 'sha256-JiQWaKCa7uvT/NVD3Fv4zD19bldwp9FwDw4m57aVfdo=' 'sha256-1hemDK+KBnKsBUFLPV9T5qsK2UJ4Ia6lUZIcpH8gK78=' 'sha256-2JF7yIZW8wSzYABrzjFzAl8AiDIjrH3bzLeqc+7DCno=' 'sha256-fWIcjczf7nSgGy1xGF0GZboY8hCLjvmVZH7kn/QhaAo=' 'sha256-gBdrwNf7HZXnANWql/2pVoiS4GNj71KYmbBt7ML/5QY=' 'sha256-fbVlxLZ5EB3YDdsDWrKDIpp5QkTbZfCTo/6JmjHAdCE=' 'sha256-e3KIKEKxL9er/v0G6RaRrrxeVzTp2VuyAYiTAZmuVTw=' 'sha256-MDIap79wgMzcFqUWfOl/9t0zHwegzKfncy1jHYtJKuI=' 'sha256-g2XKK5BMER2c6jL9J5mxnW8K68+FNAYGgk+8pqEQQTw=' 'sha256-znyGosazbiHJOGqxF0cDwTgVzUni/N7W00pK/WuALoE=' 'sha256-khHZn7RROcaIiuqSqraXZt9/y5vrWc5TfFwqIFwDZDI=' 'sha256-mWCVEZfB0xoMLDkx++kj4XXNrLDouVJ7W3zVKSoyP9s=' 'sha256-LjwY6fHGhiioivHdnjLFMb2M3s+qev6s7/pOSh9NypI=' 'sha256-jKyuh0xRF9zEVTtX/p3IiXW436qJCLNJKN/EluBEeVw='; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self'; upgrade-insecure-requests"
         },
         {
           "key": "Strict-Transport-Security",
@@ -46,11 +46,51 @@
       ]
     },
     {
-      "source": "/assets/(.*)",
+      "source": "/assets/css/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
           "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/js/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
+        }
+      ]
+    },
+    {
+      "source": "/favicon.ico",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
+      ]
+    },
+    {
+      "source": "/sitemap.xml",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/xml; charset=utf-8"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
         }
       ]
     }
