@@ -72,3 +72,34 @@
     line-height: 1.85;
   }
 }
+
+
+/* --- V8 founder portrait refinement --- */
+.founder-spotlight,
+.founder-portrait {
+  max-width: min(900px, 100%);
+  margin-inline: auto;
+}
+.founder-spotlight img,
+.founder-portrait img {
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  object-position: center top;
+  background: linear-gradient(180deg, rgba(139,77,60,.08), rgba(139,77,60,.02));
+}
+.founder-spotlight figcaption,
+.founder-portrait + .copy p {
+  max-width: 62ch;
+}
+.institute-team-callout .team-collage.founder-portrait {
+  max-width: 560px;
+}
+@media (max-width: 767px) {
+  .founder-spotlight,
+  .founder-portrait {
+    max-width: 100%;
+  }
+  .institute-team-callout .team-collage.founder-portrait {
+    max-width: 100%;
+  }
+}
