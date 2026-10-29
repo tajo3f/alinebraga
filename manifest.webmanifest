@@ -9,13 +9,13 @@
   "theme_color": "#8b4d3c",
   "icons": [
     {
-      "src": "/assets/images/favicon-google-v14-192.png",
+      "src": "/assets/images/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/assets/images/favicon-google-v14-512.png",
+      "src": "/assets/images/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
